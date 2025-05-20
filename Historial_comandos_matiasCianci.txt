@@ -1,0 +1,37 @@
+sudo apt update
+sudo apt install git -y
+git --version
+cd
+pwd
+mkdir repogit
+cd repogit
+git clone git@github.com:MatiasCianci/TP1_AySO-.git
+cd TP1_AySO-/
+pwd
+ls -l
+cat /etc/os-release 
+man grep
+grep -i Home_url/etc/os-release
+cd repogit/TP1_AySO-/
+cat <<EOF >> README.md
+Alumno: Matias cianci
+División: 313
+Turno: Noche
+EOF
+
+git add .
+git add README.md datos_usuarios.txt 
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
+$HOME/.bash_history 
+whoami
+$HOME/.bash_history 
+history
+sudo $HOME/.bash_history 
+sudo chown vagrant:vagrant ~/.bash_history
+cat ~/.bash_history
+$HOME/.bash_history 
+ls -l
+history -a
